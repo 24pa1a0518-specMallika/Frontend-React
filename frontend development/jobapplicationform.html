@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Application Form</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.container{
+    width:500px;
+    margin:30px auto;
+    background:white;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+h2{
+    margin-bottom:5px;
+}
+
+h3{
+    color:#555;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    box-sizing:border-box;
+}
+
+.name{
+    display:flex;
+    gap:10px;
+}
+
+.name input{
+    width:100%;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+h2{
+    text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Job Application Form</h2>
+<form>
+
+<label>First Name</label>
+<div class="name">
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Last Name">
+</div>
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Phone</label>
+<input type="tel" placeholder="Enter your phone number" required>
+
+<label>Position</label>
+<input type="text" placeholder="Position you are applying for">
+
+<label>Resume Upload</label>
+<input type="file">
+
+<label>Portfolio Website</label>
+<input type="text" placeholder="Website URL">
+
+<label>Salary Requirements</label>
+<input type="number" placeholder="Expected Salary">
+
+<label>When Can You Start?</label>
+<input type="date">
+
+<label>Are You Willing to Relocate?</label>
+
+<input type="radio" name="relocate"> Yes <br>
+<input type="radio" name="relocate"> No <br>
+<input type="radio" name="relocate"> Not Sure
+
+<label>Last Company You Worked For</label>
+<input type="text" placeholder="Company Name">
+
+<label>Comments</label>
+<textarea rows="5" placeholder="Write your comments"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

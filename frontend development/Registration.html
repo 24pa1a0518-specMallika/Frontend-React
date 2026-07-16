@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.box{
+    width:350px;
+    margin:50px auto;
+    padding:25px;
+    background:white;
+    border:2px solid white;
+}
+
+h2{
+    text-align:center;
+}
+label{
+    display:block;
+    margin-top:12px;
+    font-weight:bold;
+}
+
+input,textarea{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:15px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="box">
+
+<h2>Registration Form</h2>
+<form>
+
+<label>Name</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Age</label>
+<input type="number" placeholder="Enter your age" required>
+
+<label>Branch</label>
+<input type="text" placeholder="Enter your branch" required>
+
+<label>Date</label>
+<input type="date">
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter your phone number" required>
+
+<label>Message</label>
+<textarea rows="4" placeholder="Write your message"></textarea>
+
+<button type="submit">Register</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

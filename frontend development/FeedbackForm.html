@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .box{
+            width:420px;
+            background:white;
+            padding:25px;
+            margin:40px auto;
+            border:1px solid #ccc;
+            border-radius:8px;
+        }
+        h2{
+            text-align:center;
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            margin-bottom:5px;
+            font-weight:bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea{
+            width:100%;
+            padding:10px;
+            margin-bottom:10px;
+            box-sizing:border-box;
+        }
+
+        input[type="radio"]{
+            width:auto;
+            margin-right:5px;
+        }
+
+        .rating{
+            margin-top:10px;
+        }
+
+        .rating label{
+            display:inline-block;
+            margin-right:20px;
+            font-weight:normal;
+        }
+
+        .satisfaction{
+            margin-top:10px;
+        }
+
+        .satisfaction label{
+            display:block;
+            font-weight:normal;
+            margin-bottom:8px;
+        }
+
+        button{
+            width:100%;
+            padding:10px;
+            margin-top:20px;
+            cursor:pointer;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Feedback Form</h2>
+
+<form>
+
+<label>Name:</label>
+<input type="text" placeholder="Enter your name" required>
+
+<label>Email:</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Phone Number:</label>
+<input type="tel" placeholder="Enter your phone number">
+
+<label>How would you Rate Your Overall Experience?</label>
+
+<div class="rating">
+<label><input type="radio" name="rating" value="1">1</label>
+
+<label><input type="radio" name="rating" value="2">2</label>
+
+<label><input type="radio" name="rating" value="3">3</label>
+
+<label><input type="radio" name="rating" value="4">4</label>
+
+<label><input type="radio" name="rating" value="5">5</label>
+</div>
+
+<label>How satisfied are you with our service?</label>
+
+<div class="satisfaction">
+
+<label><input type="radio" name="satisfaction" value="Very Satisfied">Very Satisfied</label>
+
+<label><input type="radio" name="satisfaction" value="Satisfied">Satisfied</label>
+
+<label><input type="radio" name="satisfaction" value="Neutral">Neutral</label>
+
+<label><input type="radio" name="satisfaction" value="Dissatisfied">Dissatisfied</label>
+
+</div>
+
+<label>Comments or Suggestions:</label>
+
+<textarea rows="4" placeholder="Any suggestions"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
