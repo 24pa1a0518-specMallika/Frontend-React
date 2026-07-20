@@ -1,0 +1,14 @@
+nav{
+    background:black;
+    padding:15px;
+}
+
+a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+}
+
+a:hover{
+    color:yellow;
+}

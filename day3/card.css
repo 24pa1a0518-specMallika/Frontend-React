@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    font-family: Arial;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 60%;
+    margin: auto;
+}
+
+.box{
+    height: 150px;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
