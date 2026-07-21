@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+/* Navigation */
+
+nav{
+    background:#333;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Slider */
+
+.slider{
+    width:100%;
+    height:350px;
+    overflow:hidden;
+}
+
+.slides{
+    width:300%;
+    display:flex;
+    animation:slide 9s infinite;
+}
+
+.slides img{
+    width:100%;
+    height:350px;
+}
+
+@keyframes slide{
+
+0%{
+    transform:translateX(0%);
+}
+
+33%{
+    transform:translateX(-100%);
+}
+
+66%{
+    transform:translateX(-200%);
+}
+
+100%{
+    transform:translateX(0%);
+}
+
+}
+
+/* Products */
+
+.products{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:40px;
+}
+
+.card{
+    width:220px;
+    border:1px solid gray;
+    border-radius:8px;
+    text-align:center;
+    padding:15px;
+}
+
+.card img{
+    width:100%;
+    height:180px;
+}
+
+.card h3{
+    margin:10px 0;
+}
+
+.card p{
+    color:green;
+    font-size:20px;
+}
+
+button{
+    background:orange;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+button:hover{
+    background:green;
+}
+
+/* Footer */
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
