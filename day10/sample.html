@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>problems</title>
+</head>
+<body>
+    <h1>double the given numbers</h1>
+    <script>
+        const num=[1,2,3,4,5];
+        const doubled=num.map(n => n * 2);
+        document.write(doubled);
+    </script>
+    <h1>convert array of strings to uppercase</h1>
+    <script>
+        const strings=['john', 'peter', 'alex'];
+        const uppercase=strings.map(s => s.toUpperCase());
+        document.write(uppercase);
+    </script>
+    <h1>extract only names</h1>
+    <script>
+        let students=[{
+            id:1,
+            name:'abhi',
+        },
+        {
+            id:2,
+            name:'john',
+        },
+        {
+            id:3,
+            name:'peter',
+
+        }
+         ];
+        const names=students.map(s => s.name);
+        document.write(names);
+    </script>
+    <h1>find numbers greater than 50</h1>
+    <script>
+        const marks=[35,60,75,45,90];
+        const greaterThan50=marks.filter(function(m){
+            return m>50;
+        });
+        document.write(greaterThan50);
+    </script>
+    <h1>filter active numbers</h1>
+    <script>
+        let user=[{
+            name:"john",
+            active:true
+        },{
+            name:"peter",
+            active:false
+        }];
+        const activemem=user.filter(function(u){
+            return u.active;
+        });
+        document.write(JSON.stringify(activemem));
+    </script>
+</body>
+</html>
