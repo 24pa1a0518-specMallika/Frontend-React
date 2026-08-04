@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript methods</title>
+</head>
+<body>
+    <h1 id="welcome">Hello world</h1>
+    <button onclick="msg()">Click me</button>
+    <script>
+        let ele=document.getElementById("welcome");
+        ele.addEventListener("click",msg());
+        function msg(){
+            ele.innerHTML="welcome to vishnu college";
+        };
+    </script>
+    <h1>destructuring</h1>
+    <script>
+        const colors=["red","green","blue"];
+        const [first,second,third]=colors;
+        console.log(second);
+        const numbers=[1,2,3,4,5];
+        const [one,,,,two]=numbers;
+        console.log(two);
+        const student={
+            name:'david',
+            age:20
+        };
+        const {name:studentname,age:currentage}=student;
+        console.log(studentname,currentage);
+        const user={name:rahul};
+        const{names,cities="delhi"}=user;
+        console.log(names);
+        console.log(cities);
+        const number=[100];
+        const [num,value=200]=number;
+        console.log(value);
+        const employee={
+            name:'john',
+            adress:{
+                city:'banglore',
+                state:'karnataka'
+            }
+        };
+        const {name,adress:{city,state}}=employee;
+        console.log(name,city,state);
+        let a=10;
+        let y=20;
+        [a,y]=[y,a];
+        console.log(a);
+    </script>
+
+</body>
+</html>
