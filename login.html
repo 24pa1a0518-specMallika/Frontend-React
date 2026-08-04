@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0d87a8;
+}
+
+.container{
+    width:380px;
+    background:white;
+    margin:40px auto;
+    padding:40px;
+    border-radius:8px;
+}
+
+h1{
+    text-align:center;
+    color:#555;
+    margin-bottom:30px;
+    font-weight:normal;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+input[type="email"],
+input[type="password"]{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    margin-bottom:15px;
+}
+
+.check{
+    margin-bottom:20px;
+}
+
+.check input{
+    width:auto;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#0d87a8;
+    color:white;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0a6f8b;
+}
+
+p{
+    text-align:center;
+    margin-top:20px;
+}
+
+a{
+    color:#0d87a8;
+    text-decoration:none;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Login</h1>
+
+<form>
+
+<label>Email:</label>
+<input type="email" placeholder="Enter email" required>
+
+<label>Password:</label>
+<input type="password" placeholder="Enter password" required>
+<button type="submit">SIGN IN</button>
+
+<p>
+Forgot <a href="#">Username</a> /
+<a href="#">Password?</a>
+</p>
+
+<p>
+Don't have an account?
+<a href="#">Sign up</a>
+</p>
+
+</form>
+
+</div>
+
+</body>
+</html>
