@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - E-Commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+            🛍 MyShop
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse"
+            data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+
+            <form class="d-flex mx-auto w-50">
+                <input class="form-control"
+                    type="search"
+                    placeholder="Search Products..."
+                    id="searchBox">
+            </form>
+
+            <div class="d-flex">
+
+                <button class="btn btn-outline-light me-2">
+                    <i class="bi bi-heart-fill text-danger"></i>
+                    Wishlist
+                    <span class="badge bg-danger"
+                    id="wishlistCount">0</span>
+                </button>
+
+                <button class="btn btn-warning">
+                    <i class="bi bi-cart-fill"></i>
+                    Cart
+                    <span class="badge bg-dark"
+                    id="cartCount">0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<div class="container mt-4">
+
+<div class="hero p-5 rounded text-center">
+
+<h1>Welcome to MyShop</h1>
+
+<p>
+Best Deals On Electronics
+</p>
+
+</div>
+
+</div>
+<!-- ================= PRODUCTS ================= -->
+<div class="container mt-5">
+
+    <div class="row" id="productContainer">
+
+        <!-- Product 1 -->
+        <div class="col-lg-3 col-md-6 mb-4 product">
+            <div class="card shadow h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQq_EGqOPQJ5eQqg_8TkpQM6y5EYE0Cji-JuE5h8rzQNBbVFCWXPbVRad&s=10"
+                    class="card-img-top">
+
+                <div class="card-body text-center">
+                    <h5 class="product-name">Laptop</h5>
+                    <p>Laptop for Coding</p>
+                    <h4 class="text-success">₹90000</h4>
+                    <button class="btn btn-primary viewBtn"
+                        data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcQq_EGqOPQJ5eQqg_8TkpQM6y5EYE0Cji-JuE5h8rzQNBbVFCWXPbVRad&s=10">
+                        View
+                    </button>
+                    <button class="btn btn-success cartBtn" data-price="90000">Cart</button>
+                    <button class="btn btn-danger deleteBtn"> Delete</button>
+                    <button class="btn btn-outline-danger wishBtn">  ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-lg-3 col-md-6 mb-4 product">
+            <div class="card shadow h-100">
+                <img src="https://images.samsung.com/is/image/samsung/assets/levant/s2602/pcd/smartphones/PCD_Header-KV_Galaxy-S26-Ultra_MO_720x1080.jpg"
+                    class="card-img-top">
+                <div class="card-body text-center">
+                    <h5 class="product-name">Phone</h5>
+                    <p>Latest Smartphone</p>
+                    <h4 class="text-success">₹80000</h4>
+
+                    <button class="btn btn-primary viewBtn"
+                        data-img="https://images.samsung.com/is/image/samsung/assets/levant/s2602/pcd/smartphones/PCD_Header-KV_Galaxy-S26-Ultra_MO_720x1080.jpg">
+                        View 
+                    </button>
+                    <button class="btn btn-success cartBtn" data-price="80000">Cart</button>
+                    <button class="btn btn-danger deleteBtn">Delete</button>
+                    <button class="btn btn-outline-danger wishBtn">  ❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-lg-3 col-md-6 mb-4 product">
+            <div class="card shadow h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9mBW-B0pvb7G3RCUJ51ojsyOHUTxe6aeBSQgeuOCvR1ycjgnqXbLJqoM&s=10"
+                    class="card-img-top">
+
+                <div class="card-body text-center">
+                    <h5 class="product-name">Headphones</h5>
+                    <p>Noise Cancelling Headphones</p>
+                    <h4 class="text-success">₹3000</h4>
+
+                    <button class="btn btn-primary viewBtn"
+                        data-img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9mBW-B0pvb7G3RCUJ51ojsyOHUTxe6aeBSQgeuOCvR1ycjgnqXbLJqoM&s=10">
+                        View
+                    </button>
+
+                    <button class="btn btn-success cartBtn" data-price="3000"> Cart </button>
+                    <button class="btn btn-danger deleteBtn"> Delete  </button>
+                    <button class="btn btn-outline-danger wishBtn">❤️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-lg-3 col-md-6 mb-4 product">
+            <div class="card shadow h-100">
+                <img src="https://images-static.nykaa.com/media/catalog/product/a/9/a9cd33bVE9D00324_1.jpg?tr=w-500"
+                    class="card-img-top">
+
+                <div class="card-body text-center">
+                    <h5 class="product-name">Watch</h5>
+                    <p>Stylish Smartwatch</p>
+                    <h4 class="text-success">₹5000</h4>
+
+                    <button class="btn btn-primary viewBtn"
+                        data-img="https://images-static.nykaa.com/media/catalog/product/a/9/a9cd33bVE9D00324_1.jpg?tr=w-500">
+                        View
+                    </button>
+
+                    <button class="btn btn-success cartBtn" data-price="5000"> Cart </button>
+                    <button class="btn btn-danger deleteBtn"> Delete  </button>
+                    <button class="btn btn-outline-danger wishBtn">❤️</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= TOTAL ================= -->
+
+<div class="container mb-4">
+
+    <div class="alert alert-info text-center">
+
+        <h4>
+            Total Cart Price :
+            ₹ <span id="totalPrice">0</span>
+        </h4>
+
+    </div>
+
+</div>
+<!-- ================= MODAL ================= -->
+
+<div class="modal fade"
+id="imageModal">
+
+<div class="modal-dialog modal-lg">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5>Product Image</h5>
+
+<button class="btn-close"
+data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body text-center">
+
+<img id="modalImage"
+class="img-fluid rounded">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
